@@ -1,4 +1,4 @@
-📊 n8n Workflow – Automated Lead Evaluation from Google Sheets
+#📊 n8n Workflow – Automated Lead Evaluation from Google Sheets
 
 This workflow automates lead evaluation for companies. Whenever a new lead is added to a Google Sheet, the workflow evaluates the data using an AI model, assigns a rating, and generates a comment to help prioritize and qualify leads efficiently.
 
