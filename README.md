@@ -1,57 +1,53 @@
-#📊 n8n Workflow – Automated Lead Evaluation from Google Sheets
+# 📊 n8n Workflow – Automated Lead Evaluation from Google Sheets  
 
-This workflow automates lead evaluation for companies. Whenever a new lead is added to a Google Sheet, the workflow evaluates the data using an AI model, assigns a rating, and generates a comment to help prioritize and qualify leads efficiently.
+This workflow automates **lead evaluation for companies**.  
+Whenever a new lead is added to a Google Sheet, the workflow evaluates the data using an AI model, assigns a **rating**, and generates a **comment** to help prioritize and qualify leads efficiently.  
 
-⚡ Workflow Overview
+---
 
-Google Sheets Trigger
+## ⚡ Workflow Overview  
 
-Watches for new lead entries in a Google Sheet.
+### 🔹 Google Sheets Trigger  
+- Watches for new lead entries in a Google Sheet.  
 
-Message a Model (AI Evaluation)
+### 🔹 Message a Model (AI Evaluation)  
+- Sends lead details to an AI model for evaluation.  
+- AI analyzes the information and returns a **rating (1–5)** and a **comment** on lead quality.  
 
-Sends lead details to an AI model for evaluation.
+### 🔹 Edit Fields  
+- Extracts and formats the AI’s output (rating + comment).  
 
-AI analyzes the information and returns a rating (1–5) and a comment on lead quality.
+### 🔹 Merge Node  
+- Combines the original lead data with AI-generated evaluation.  
 
-Edit Fields
+### 🔹 Append or Update Row in Sheet  
+- Updates the Google Sheet with the rating and comment alongside the lead data.  
 
-Extracts and formats the AI’s output (rating + comment).
+---
 
-Merge Node
+## 🛠️ Tech Stack  
 
-Combines the original lead data with AI-generated evaluation.
+- **n8n** – Workflow automation  
+- **Google Sheets** – Lead storage  
+- **OpenAI (Message a Model)** – AI-based lead evaluation  
 
-Append or Update Row in Sheet
+---
 
-Updates the Google Sheet with the rating and comment alongside the lead data.
+## 🚀 How It Works  
 
-🛠️ Tech Stack
+1. Sales/marketing team enters a new lead in Google Sheets.  
+2. Workflow automatically triggers when a new row is added.  
+3. AI model reviews lead details → Provides **rating (1–5)** and **comment**.  
+4. Results are merged with the original row and updated in the sheet.  
+5. Companies get an **instant qualification score**, saving time on manual evaluations.  
 
-n8n – Workflow automation
+---
 
-Google Sheets – Lead storage
+## 📌 Use Cases  
 
-OpenAI (Message a Model) – AI-based lead evaluation
+- **Lead Qualification:** Score leads on a scale to prioritize outreach.  
+- **Sales Funnel Optimization:** Identify high-potential leads quickly.  
+- **CRM Enhancement:** Add AI-powered evaluation directly into existing pipelines.  
+- **Customer Segmentation:** Separate high-quality vs. low-quality leads automatically.  
 
-🚀 How It Works
-
-Sales/marketing team enters a new lead in Google Sheets.
-
-Workflow automatically triggers when a new row is added.
-
-AI model reviews lead details → Provides rating (1–5) and comment.
-
-Results are merged with the original row and updated in the sheet.
-
-Companies get an instant qualification score, saving time on manual evaluations.
-
-📌 Use Cases
-
-Lead Qualification: Score leads on a scale to prioritize outreach.
-
-Sales Funnel Optimization: Identify high-potential leads quickly.
-
-CRM Enhancement: Add AI-powered evaluation directly into existing pipelines.
-
-Customer Segmentation: Separate high-quality vs. low-quality leads automatically.
+---
